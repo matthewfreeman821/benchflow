@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>BenchFlow · One-time demo credentials</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/ui.js"></script>
+  <script defer src="/api.js"></script>
+  <script defer src="/demo.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="masthead"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">B/</span><span>BenchFlow<small>ISOLATED FICTIONAL DEMO</small></span></a></header>
+  <main id="main" class="reading">
+    <p class="eyebrow">Host-local demonstration</p><h1>One viewing. No delivery.</h1>
+    <p>This page contains no embedded credentials. Only a deliberate, CSRF-protected request can retrieve the fictional accounts, once per demo process.</p>
+    <div class="callout caution"><strong>Private on this screen</strong><p>Passwords and the activation code remain only in this page's memory. Navigating away, hiding this page or clearing the display removes them. Do not put them in a URL, screenshot, message or persistent browser storage.</p></div>
+    <p>If the response is lost or already consumed, ask the host operator to restart isolated demo mode. Restart rotates credentials and preserves fictional repair stories. There is no reset button here.</p>
+    <div class="actions"><button id="reveal" class="primary" type="button">Retrieve one-time demo credentials</button><button id="clear" type="button">Clear displayed secrets</button><a href="/#/login">Go to sign in</a></div>
+    <div id="demo-status" role="status"></div><section id="secrets" aria-label="One-time credentials"></section>
+  </main>
+</body>
+</html>

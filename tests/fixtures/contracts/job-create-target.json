@@ -1,0 +1,23 @@
+{
+  "command_id": "fae1e088-5cd8-4d0c-a508-2f4c4e1e8381",
+  "target": {"type": "customer", "id": "f5a169d6-e8ad-4d36-a695-5b241c1612cb"},
+  "expected": {"customer_rev": 1},
+  "action": "job.create",
+  "data": {
+    "customer_id": "f5a169d6-e8ad-4d36-a695-5b241c1612cb",
+    "device": {
+      "make": {"value": "Fictional", "known": true},
+      "model": {"value": "Unit-1", "known": true},
+      "serial": {"value": null, "known": false}
+    },
+    "reported_issue": "Fictional display issue",
+    "condition": {"value": null, "known": false},
+    "accessories": {"known": true, "items": []},
+    "testing_constraints": {"value": null, "known": false},
+    "received_by_customer_name": "Fictional Example",
+    "acknowledgement": {"text_version": "receipt-v1", "method": "in_person"},
+    "owner_staff_id": "36fc65f1-317d-4e59-b1c0-a1940d0a1ef6",
+    "next_action": "Review intake",
+    "next_action_due_at": "2026-10-23T15:00:00Z"
+  }
+}

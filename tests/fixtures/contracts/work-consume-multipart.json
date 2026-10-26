@@ -1,0 +1,28 @@
+{
+  "command_id": "b29de3d9-0994-4f94-b99d-c9eb1069e08d",
+  "target": {
+    "type": "job",
+    "id": "f5a169d6-e8ad-4d36-a695-5b241c1612cb"
+  },
+  "expected": {
+    "job_rev": 4,
+    "gate_rev": 2,
+    "estimate_version": 1,
+    "stock_rev:db32e36c-d5c1-4e7f-a53d-a8e2cbdad002": 8,
+    "stock_rev:cd2846b4-36c5-476d-9d6b-5a4b1b4c98d0": 13
+  },
+  "action": "work.consume",
+  "data": {
+    "task_id": "36fc65f1-317d-4e59-b1c0-a1940d0a1ef6",
+    "items": [
+      {
+        "reservation_id": "7c3ea98a-b6ac-4bf6-9b3a-f77310fbf5b1",
+        "qty": 1
+      },
+      {
+        "reservation_id": "1c95befb-5fc4-44d0-9f0e-f8ce95ace121",
+        "qty": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local application data and runtime traces
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.log
+data/
+backups/
+
+# Downloaded local dependency cache; not a reviewed distribution artifact
+infra/wheels/
+
+# Editors and operating system
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Credentials and local verification artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.bak
+node_modules/
+verification-venv-*/

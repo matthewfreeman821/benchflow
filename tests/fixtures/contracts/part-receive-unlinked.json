@@ -1,0 +1,12 @@
+{
+  "command_id": "789eb8bd-cf87-426e-899d-09cdfe6967e5",
+  "target": {"type": "part", "id": "b9788e5c-f9d2-48e8-9305-13f95774f83c"},
+  "expected": {"stock_rev": 1},
+  "action": "parts.receive",
+  "data": {
+    "order_id": null,
+    "part_id": "b9788e5c-f9d2-48e8-9305-13f95774f83c",
+    "qty": 2,
+    "source_note": "Fictional opening receipt"
+  }
+}

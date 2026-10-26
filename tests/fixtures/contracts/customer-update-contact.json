@@ -1,0 +1,23 @@
+{
+  "command_id": "3a4a23ef-1ef1-44f5-b3bb-d0c039bd9fc8",
+  "target": {
+    "type": "customer",
+    "id": "f5a169d6-e8ad-4d36-a695-5b241c1612cb"
+  },
+  "expected": {
+    "customer_rev": 3
+  },
+  "action": "customer.update_contact",
+  "data": {
+    "display_name": "Fictional Example",
+    "phone": {
+      "value": "555-0101",
+      "known": true
+    },
+    "email": {
+      "value": null,
+      "known": false
+    },
+    "reason": "contact_resolution"
+  }
+}

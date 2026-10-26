@@ -1,0 +1,26 @@
+name: Verify local product
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Create isolated Python environment
+        run: python -m venv .venv
+      - name: Install hash-locked dependencies
+        run: ./.venv/Scripts/python.exe -m pip install --require-hashes --only-binary=:all: -r requirements-dev.txt
+      - name: Check dependency compatibility
+        run: ./.venv/Scripts/python.exe -m pip check
+      - name: Run all Python suites
+        run: ./.venv/Scripts/python.exe -m pytest tests backend/tests infra -q
+      - name: Check frontend contracts
+        run: node frontend/verify.js
