@@ -17,7 +17,8 @@ jobs:
       - name: Create isolated Python environment
         run: python -m venv .venv
       - name: Install hash-locked dependencies
-        run: ./.venv/Scripts/python.exe -m pip install --require-hashes --only-binary=:all: -r requirements-dev.txt
+        run: |
+          ./.venv/Scripts/python.exe -m pip install --require-hashes --only-binary=:all: -r requirements-dev.txt
       - name: Check dependency compatibility
         run: ./.venv/Scripts/python.exe -m pip check
       - name: Run all Python suites
